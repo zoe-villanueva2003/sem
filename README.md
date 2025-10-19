@@ -11,4 +11,6 @@ Author: Zoeee Villanueva
 [![Releases](https://img.shields.io/github/release/zoe-villanueva2003/sem/all.svg?style=flat-square)](https://github.com/zoe-villanueva2003/sem/releases)
 
 # DevOps
-![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/zoe-villanueva2003/sem/<A workflow for my Hello World App>/develop?style=flat-square)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/zoe-villanueva2003/sem/main.yml/develop?style=flat-square)
+
+
