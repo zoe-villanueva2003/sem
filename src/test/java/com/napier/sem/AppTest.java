@@ -19,10 +19,16 @@ public class AppTest
     }
 
     @Test
+    void printSalariesTestNull()
+    {
+        app.printSalaries(null);
+    }
+
+    @Test
     void printSalariesTestEmpty()
     {
-        ArrayList<Employee> employees = new ArrayList<Employee>();
-        app.printSalaries(employees);
+        ArrayList<Employee> employess = new ArrayList<Employee>();
+        app.printSalaries(employess);
     }
 
     @Test
@@ -46,6 +52,4 @@ public class AppTest
         employees.add(emp);
         app.printSalaries(employees);
     }
-
-    }
-
+}
