@@ -9,8 +9,8 @@
     <version>0.1.0.2</version>
 
     <properties>
-        <maven.compiler.source>10</maven.compiler.source>
-        <maven.compiler.target>10</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source> <!-- Changed from 10 to 11 -->
+        <maven.compiler.target>11</maven.compiler.target> <!-- Changed from 10 to 11 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -32,6 +32,13 @@
             <artifactId>junit-jupiter-engine</artifactId>
             <version>5.1.0</version>
             <scope>test</scope>
+        </dependency>
+
+        <!-- ADDED: JaCoCo dependency -->
+        <dependency>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.8.8</version> <!-- Updated version -->
         </dependency>
     </dependencies>
 
@@ -67,16 +74,12 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
-                <configuration>
-                    <includes>
-                        <include>**/AppTest.java</include>
-                    </includes>
-                </configuration>
+                <!-- REMOVED: includes configuration to run all tests -->
             </plugin>
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.2</version>
+                <version>0.8.8</version> <!-- Updated version -->
                 <executions>
                     <execution>
                         <goals>
